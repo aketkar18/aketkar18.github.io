@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="modern.css" id="css_style">
+    <title>Anuj Ketkar</title>
+</head>
+
+<body onload="setSlider()">
+    <script src='functions.js'></script>
+    <section class="head">
+        <h1> PORTFOLIO </h1>
+        <div class="navi">
+            <a href="index.html">Home</a>
+            <a class="active" href="portfolio.html">Portfoilio</a>
+            <a href="qualifications.html">Qualifications</a>
+            <a href="music.html">Music</a>
+        </div>
+        <!-- <label class="switch">
+            <input type="checkbox" id="check" onclick='change()''>
+            <span class="slider"></span>
+            <p class="label"> <br> Site Theme </p>
+        </label> -->
+    </section>
+
+    <div class=deck>
+        <div class="card">
+            <h2> Global Study Set </h2>
+            <p class="small"> Global Study Set is a Java project that generates digital flashcards that automatically contains the same word in different languages. 
+                It allows user to study cards, take quizzes on them, and add their favorites to a collection to study later. 
+                It was heavily designed in object-oriented structure with advanced use of Java containers, generics, and bounded types.
+                It utilizes a comma seperated text file containing parallel translation data to support five languages. </p>
+            <a href="https://github.com/aketkar18/globalstudyset"">Github Link</a>
+        </div>
+
+        <div class="card">
+            <h2> Harmonia </h2>
+            <p class="small"> Harmonia was created with team during HowdyHack 2021; a hackathon hosted by the organization TAMUHack at Texas A&M. All brainstorming, planning, coding,
+                and testing was done withingin a 24 hour period. Because of this, we delegated functions among our team and incorporated code from each member into final product.
+                It was written entirely in Python and utilized Tkinter for a graphical user interface to display virtual piano keyboard.
+                Additionally it used the playsound module to allow user to learn about triads and harmonies through auditory juxtaposition.
+                 </p>
+            <a href="https://devpost.com/software/harmonia-8asml0">Devpost Link</a>
+        </div>
+
+        <div class="card">
+            <h2> Isomorpher </h2>
+            <p class="small"> This project was created during my time as an undergraduate research assistant in the Aggie Research Program. The research was on graph mining with the open
+                source engine Peregrine. The objective was to find which isomorphic variant of a pattern would perform the best when mining a large social media graph and analyze what causes the differences in performace.
+                It is written in C++ and allows you enter an input graph it will exhuastively generate all isomorphic variants of the pattern. 
+                It writes each variant in a seperate output file in the current directory and can addtionally generate LaTeX source code that displays each of the variants. 
+            </p>
+            <a href="https://github.com/aketkar18/graphtools">Github Link</a>
+        </div>
+
+        <div class="card">
+            <h2> HACK Assembler </h2>
+            <p class="small"> 
+                This is an assembler for the HACK Assembely language for the theoretical HACK Computer based on the Von Neumann architecture. It takes in the input of a .asm file that contains
+                assembly code and generates a .hack file that contains the assembled machine code. This code can be run using the Nand2Tetris CPU emulator. 
+                The project also includes a disassembler that will convert machine code back to assembly code.
+            </p>
+            <a href="https://github.com/aketkar18/assembler">Github Link</a>
+        </div>
+
+    </div>
+</body>
+
+</html>
