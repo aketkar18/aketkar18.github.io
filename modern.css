@@ -8,15 +8,16 @@ body {
 }
 
 h1 {
+    text-align: center;
     font-weight: 900;
     color: white;
-    font-size: 50px;
+    font-size: 60px;
 }
 
 h2 {
     font-weight: 700;
     color: white;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 p.spaced {
@@ -56,12 +57,11 @@ section {
 
 .navi {
     font-weight: 300;
-    font-size: 15px;
     word-spacing: 0.5rem;
 }
 
 .navi a {
-    padding: 0.5rem;
+    padding: 0.25rem;
     text-decoration: none;
     font-size: 20px;
     color: grey;
