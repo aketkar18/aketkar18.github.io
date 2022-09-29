@@ -100,27 +100,29 @@ section {
     border-radius: 3rem;
     height: 500px;
     width: 500px;
-    min-width: 200px;
     padding: 1rem;
 
     box-shadow: -1rem 0 2rem black;
     transition: 0.7s;
 }
 
-@media screen and (min-width: 600px) {
-    .card {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        background: #221C35;
-        align-items: center;
-        padding: 70px 30px;
-    }
-  }
-
 .card:hover {
     transform: translateY(-2rem);
 }
+
+@media (max-width: 1000px) {
+    .deck {
+        flex-direction: column;
+    }
+    .card {
+        height: 400px;
+        width: 300px;
+        padding: 1rem;
+    }
+    .card:hover {
+        transform: translateY(-0.5rem);
+    }
+  }
 
 .switch {
     position: absolute;
