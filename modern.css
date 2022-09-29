@@ -10,13 +10,13 @@ body {
 h1 {
     font-weight: 900;
     color: white;
-    font-size: 50px;
+    font-size: 45px;
 }
 
 h2 {
     font-weight: 700;
     color: white;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 p.spaced {
@@ -56,14 +56,14 @@ section {
 
 .navi {
     font-weight: 300;
-    font-size: 40px;
+    font-size: 20px;
     word-spacing: 0.5rem;
 }
 
 .navi a {
     padding: 0.5rem;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: grey;
     display: inline-block;
 }
