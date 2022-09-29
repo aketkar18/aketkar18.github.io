@@ -8,17 +8,17 @@ body {
 }
 
 h1 {
-    text-align: center;
     font-weight: 900;
     color: white;
     font-size: 60px;
+    text-align: center;
 }
 
 h2 {
-    text-align: center;
     font-weight: 700;
     color: white;
     font-size: 40px;
+    text-align: center;
 }
 
 p.spaced {
@@ -37,7 +37,8 @@ section {
     position: relative;
     display: flex;
     flex-direction: column;
-
+    align-items: center;
+    padding: 70px 30px;
 }
 
 /* Classes */
@@ -70,25 +71,16 @@ section {
 }
 
 .navi a:hover {
-    background-color: #4c00b0;
     color: white;
 }
 
 .first {
-    padding: 70px 30px;
-    align-items: center;
-    background: #4c00b0;
+    background: #006298;
 }
 
 .second {
-    padding: 70px 30px;
     align-items: center;
-    background: #221C35;
-}
-
-.resume {
-    align-items: center;
-    background: #221C35;
+    background: #002147;
 }
 
 .row {
