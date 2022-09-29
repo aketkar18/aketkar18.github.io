@@ -43,18 +43,13 @@ section {
 
 /* Classes */
 
+.resume{
+    padding: 20px;
+    background: #002147;
+}
+
 .active {
     background-color: #191b20;
-}
-
-.head {
-    padding: 70px 30px;
-    align-items: center;
-}
-
-.main {
-    padding: 70px 30px;
-    align-items: center;
 }
 
 .navi {
@@ -79,7 +74,6 @@ section {
 }
 
 .second {
-    align-items: center;
     background: #002147;
 }
 
@@ -112,6 +106,17 @@ section {
     box-shadow: -1rem 0 2rem black;
     transition: 0.7s;
 }
+
+@media screen and (min-width: 600px) {
+    .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background: #221C35;
+        align-items: center;
+        padding: 70px 30px;
+    }
+  }
 
 .card:hover {
     transform: translateY(-2rem);
