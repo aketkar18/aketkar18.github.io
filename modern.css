@@ -128,7 +128,7 @@ section {
     }
     .card {
         height: 450px;
-        width: 400px;
+        width: 325px;
         padding: 1rem;
     }
     .card:hover {
@@ -137,7 +137,6 @@ section {
     .card:hover~.card {
         transform: translateX(0px);
     }
-    
     .card:not(:first-child) {
         margin-left: 0;
     }
