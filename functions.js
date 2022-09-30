@@ -1,7 +1,7 @@
 function load_style() {
     page_style = localStorage.getItem("sheet_name");
     if (page_style === null) {
-        page_style = "modern.css";
+        page_style = "blue.css";
     }
     document.getElementById('css_style').setAttribute("href", page_style);
 }
@@ -11,11 +11,11 @@ function setSlider() {
 }
 
 function change() {
-    if (page_style === "modern.css") {
+    if (page_style === "blue.css") {
         localStorage.setItem("sheet_name", "pastel.css");
     }
     else {
-        localStorage.setItem("sheet_name", "modern.css");
+        localStorage.setItem("sheet_name", "blue.css");
     }
     load_style();
 }
