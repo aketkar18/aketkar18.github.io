@@ -117,7 +117,7 @@ section {
 
 .deck {
     display: flex;
-    padding: 1rem;
+    padding: 2rem;
     overflow-x: scroll;
     align-items: center;
 }
@@ -148,7 +148,7 @@ section {
     min-width: 350px;
     padding: 1.5rem;
 
-    box-shadow: -1rem 0 2rem black;
+    box-shadow: -1rem 0 1rem black;
     transition: 0.7s;
 }
 
