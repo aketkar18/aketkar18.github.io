@@ -93,6 +93,7 @@ section {
       top: 0;
     }
     .navi.responsive a {
+      background-color: hwb(220 10% 88%);
       float: none;
       display: block;
       text-align: center;
