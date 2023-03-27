@@ -28,13 +28,17 @@
     <section class = "first">
         <h2>Target Product Ideas</h2>
         <ul>
-            <li> Haptic Walker
+            <li> <b> Current Existing Designs: Walker & Cane </b>
+              <ul>
+              <li> Problems: Regular existing walkers & canes cannot warn the user of changes in elevation, leaving the user to their own devices to figure out where altitude differences are. Those without any impairments miss a step every once in a while and trip down the stairs so the users of walkers & canes who often have various levels of visual impairment, are elderly, etc. are at even greater risk of falling down the stairs. Walking down the stairs at night brings another level of danger. Having a walker that warns the user of changes in elevation would help prevent falls & increase safety for those using walkers & canes.
+              </ul>
+            <li> <b> Our Accessible Design Idea: Haptic Walker  </b>
               <ul>
                 <li> Detecting Changes in Altitude
                   <ul>
-                    <li> Adding Sensors: ultrasonic sensors could be used to identify changes in distance from the walker to the ground surface.</li>
-                    <li> Implementing Computer Vision: computer vision could also be used to detect changes in elevation. Using a camera attached to the walker, images of the environment could be taken and using image recognition, changes could be detected in the ground surface.</li>
-                    <li> GPS: using GPS technology, the walker can find the user’s altitude and location. When the walker senses the altitude level changing, it could alert the user to potential hazards.</li>
+                    <li> Adding Sensors: ultrasonic sensors could be used to identify changes in distance from the walker to the ground surface.
+                    <li> Implementing Computer Vision: computer vision could also be used to detect changes in elevation. Using a camera attached to the walker, images of the environment could be taken and using image recognition, changes could be detected in the ground surface.
+                    <li> GPS: using GPS technology, the walker can find the user’s altitude and location. When the walker senses the altitude level changing, it could alert the user to potential hazards.
                   </ul>
                 </li>
                 <li> Alerting the User
@@ -45,10 +49,10 @@
                 </li>
               </ul>
             </li>
-            <li> Other Accessible Design Examples:
+            <li> <b> Other Accessible Design Examples: </b>
               <ul>
-                <li> Smartphone App: the app could give audio/tactile feedback for elevation changes detected by GPS technology</li>
-                <li> Wearable Device (wristband, smartwatch, etc.): similar to the smartphone app, a wearable device could provide audio/tactile feedback for altitude differences identified by the GPS receiver</li>
+                <li> Smartphone App: the app could give audio/tactile feedback for elevation changes detected by GPS technology
+                <li> Wearable Device (wristband, smartwatch, etc.): similar to the smartphone app, a wearable device could provide audio/tactile feedback for altitude differences identified by the GPS receiver
               </ul>
             </li>
           </ul>
@@ -90,9 +94,8 @@
             <br/>
             <p>
             With the above devices connected to the power supply and the physical walker, we hope to use the sensor to detect when distance diagonally below of the walker increases (indicating a step). This signal will go through the arduino board and get rerouted to the vibration motor that will vibrate the walker in order to warn users that there is a step down ahead. 
-            </p>
-            <p>
             In the future, additional technologies and capabilities, like the computer vision and GPS mentioned above, can be added to the walker. 
+            </p>
             <p>
             After researching this problem and investigating the different technologies, we believe the greatest challenge will be identifying when there actually is a true drop off/step ahead. This is because on flat land, the user will pick up the walker when taking a normal step, increasing the distance between the sensor and the ground. However, this increase in distance should not be flagged as an actual step or drop in the ground. In order to resolve this challenge, we have a potential solution of using two sensors, one to detect if the walker is on the ground and one to detect if there is a step ahead. It is interesting how this is a challenge for both real users of walkers and our team. 
             </p>
