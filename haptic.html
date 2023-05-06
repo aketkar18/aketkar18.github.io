@@ -14,7 +14,7 @@
       </section>
     <section class="first">
         <h2> Introduction and Motivation </h2>
-        <p> Welcome to our project website featuring the Haptic Belt, an accessible device designed to help individuals with mobility challenges navigate unexpected surface elevation changes. Our device aims to address a significant problem faced by many individuals, including those with walking disabilities, the visually and hearing impaired, and people with limited range of motion. The Haptic Belt detects changes in the walking surface and sends vibrations to notify the user when a surface change is coming up, reducing the risk of falls and injuries. Through a needfinding study, we found that there is a need for a discrete, portable, and intuitive design that allows users to change which alerts go off. We also discovered that there are few similar devices on the market, making the Haptic Belt a unique solution to a common problem. Our device can be used in a wide range of scenarios, including non-uniform terrain and situations where vision is impaired, such as dark rooms or outdoor environments. We also recognize the importance of connecting sound alerts to headphones using Bluetooth for individuals with impaired hearing. With the Haptic Belt, we hope to create an accessible device that can help mitigate the dangers of unexpected surface elevation changes for individuals with mobility challenges. Join us on this journey as we work towards making walking safer and more accessible for everyone.
+        <p style="padding: 0 10rem"> Welcome to our project website featuring the Haptic Belt, an accessible device designed to help individuals with mobility challenges navigate unexpected surface elevation changes. Our device aims to address a significant problem faced by many individuals, including those with walking disabilities, the visually impaired, and people with limited range of motion. The Haptic Belt detects changes in the walking surface and sends LED and vibrational feedback to notify the user when a surface change is coming up, reducing the risk of falls and injuries. Through a needfinding study, we found that there is a need for a discrete, portable, and intuitive design that allows users to change which alerts go off. We also discovered that there are few similar devices on the market, making the Haptic Belt a unique solution to a common problem. Our device can be used in a wide range of scenarios, including non-uniform terrain and situations where vision is impaired, such as dark rooms or outdoor environments. We also recognize the importance of connecting sound alerts to headphones using Bluetooth for individuals with impaired hearing. With the Haptic Belt, we hope to create an accessible device that can help mitigate the dangers of unexpected surface elevation changes for individuals with mobility challenges. Join us on this journey as we work towards making walking safer and more accessible for everyone.
         </p>
     </section>
     <section class = "second">
@@ -23,6 +23,7 @@
     </section>
     <section style="text-align: center;">
       <h2> Development Process</h2>
+      <div margin="10">
       <div class="deck">
         <div class="card">
             <h3>Arduino</h3>
@@ -50,7 +51,22 @@
             <p>Belt bag to hold all components and allow the user to easily wear it to detect changes in elevation.</p>
         </div>
       </div>
-      <img src="images/code.png" alt="Picture of Code" width="600" height="700">
+      
+      <div>
+      <img src="images/code.png" alt="Picture of Code" width="500" height="600">
+      <img src="images/circuit.jpeg" alt="Picture of Circuit" width="500" height="500">
+    </div>
+    <div class="text">
+      <p style="padding: 0 10rem"> To develop the haptic belt we used a breadboard to connect an Arduino to a 9V Battery, two LEDS, an ultrasonic sensor, a transistor and a DC Motor. 
+        Using the code on the left, we were able to program the Arudino to recieve input from the ultrasonic sensor and calculate the distance to the floor. 
+        If that floor exceeded a certain threshold, the Arduino would send a signal through its output pins to turn on the red LED and the DC Motor, otherwise it would turn on the green LED. 
+        The transistor was necessary to allow the Arduino to power the DC Motor because the Arduino could not provide enough current to power the motor.
+        All the components were then placed in a belt bag and the ultrasonic sensor was allowed to hang out of the bag to detect the floor.
+    </div>
+    </section>
+    </section>
+   
+    </div>
       </section>
     <section class = "first">
         <h2>Presentation Slides</h2>
@@ -79,7 +95,7 @@
     </section>
     <section style="text-align: center;">
       <h2> Conclusion and Future Work </h2>
-      <p> In conclusion, the proposed hardware solution with built-in belt sensors, LIDAR technology, and sound alerts connected to headphones via Bluetooth provides a reliable and efficient system for monitoring and controlling height inputs during physical activities. However, there are still some challenges that need to be addressed, such as adjusting sensors for people with different heights and connecting the hardware with new software techniques. In the future, a phone app could be developed to interface with the hardware and provide more control over the system, including light and sound options. Additionally, offering different belt colors and designs could make the hardware more appealing to a wider range of users. By implementing these future steps and addressing the challenges, this hardware solution could provide an excellent tool for individuals seeking to track and improve their physical activity performance. </p>
+      <p style="padding: 0 10rem"> In conclusion, the proposed hardware solution with built-in belt sensors, LIDAR technology, and sound alerts connected to headphones via Bluetooth provides a reliable and efficient system for monitoring and controlling height inputs during physical activities. However, there are still some challenges that need to be addressed, such as adjusting sensors for people with different heights and connecting the hardware with new software techniques. In the future, a phone app could be developed to interface with the hardware and provide more control over the system, including light and sound options. Additionally, offering different belt colors and designs could make the hardware more appealing to a wider range of users. By implementing these future steps and addressing the challenges, this hardware solution could provide an excellent tool for individuals seeking to track and improve their physical activity performance. </p>
     </section>
 </body>
 </html>

@@ -20,6 +20,14 @@ h2 {
     text-align: center;
 }
 
+.text{
+    margin: 0 10rem;
+}
+
+p{
+    line-height: 1.5;
+}
+
 p.spaced {
     line-height: 1.5;
 }
@@ -118,7 +126,7 @@ section {
 
 .deck {
     display: flex;
-    padding: 2rem;
+    padding: 2rem 16rem;
     overflow-x: scroll;
     align-items: center;
 }
@@ -151,6 +159,9 @@ section {
 
     box-shadow: -1rem 0 1rem black;
     transition: 0.7s;
+
+    max-width: 300px;
+    margin: 10px;      
 }
 
 .card:hover {
