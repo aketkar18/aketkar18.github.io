@@ -179,7 +179,7 @@ section {
 
 @media (max-width: 600px) {
     .text {
-        margin: 0 2rem;
+        margin: 0rem;
     }
     .deck {
         flex-direction: column;
