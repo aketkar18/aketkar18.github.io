@@ -1,0 +1,239 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica", "Arial", sans-serif;
+    color: white;
+    background: #131518;
+}
+
+h1 {
+    font-weight: 900;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 700;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+p.spaced {
+    line-height: 1.5;
+}
+
+p.small {
+    font-size: 14px;
+}
+
+p.label {
+    font-size: 13px;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 30px;
+}
+
+.resume{
+    padding: 20px;
+    background: #002147;
+}
+
+.active {
+    background-color: #191b20;
+}
+
+.navi {
+    font-weight: 300;
+    background-color: hwb(220 14% 84%);
+    overflow: hidden;
+}
+
+.navi a {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 24px;
+    color: grey;
+    display: block;
+}
+
+.navi a.active {
+    background-color: #1f2229;
+    color: white;
+}
+
+.navi .icon {
+    display: none;
+}
+
+.navi a:hover {
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .navi a:not(:first-child) {display: none;}
+    .navi a.icon {
+      float: left;
+      display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navi.responsive {position: relative;}
+    .navi.responsive a.icon {
+      position: absolute;
+      top: 0;
+    }
+    .navi.responsive a {
+      background-color: hwb(220 10% 88%);
+      float: none;
+      display: block;
+      text-align: center;
+    }
+}
+
+.first {
+    background: #cd534d;
+}
+
+.second {
+    background: #5aaa5a;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    padding: 0.75rem;
+}
+
+.deck {
+    display: flex;
+    padding: 2rem;
+    overflow-x: scroll;
+    align-items: center;
+}
+
+.deck::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+.deck::-webkit-scrollbar-thumb {
+    background: #201c29;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+}
+
+.deck::-webkit-scrollbar-track {
+    background: linear-gradient(90deg,#201c29,#201c29 1px,#17141d 0,#17141d);
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    background: #6a6a6a;
+    border-radius: 3rem;
+    height: 425px;
+    width: 400px;
+    min-width: 350px;
+    padding: 1.5rem;
+
+    box-shadow: -1rem 0 1rem black;
+    transition: 0.7s;
+}
+
+.card:hover {
+    transform: translateY(-1rem);
+}
+
+.card:hover~.card {
+    transform: translateX(130px);
+}
+
+.card:not(:first-child) {
+    margin-left: -130px;
+}
+
+
+@media (max-width: 600px) {
+    .deck {
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .card {
+        height: 450px;
+        width: 325px;
+        padding: 1rem;
+    }
+    .card:hover {
+        transform: translateY(-1.5rem);
+    }
+    .card:hover~.card {
+        transform: translateX(0px);
+    }
+    .card:not(:first-child) {
+        margin-left: 0;
+    }
+  }
+
+.switch {
+    position: absolute;
+
+    top: 1rem;
+    right: 3rem;
+
+    display: inline-block;
+    width: 4.5rem;
+    height: 2.5rem;
+}
+
+.switch input {
+    opacity: 0;
+}
+
+.slider {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    cursor: pointer;
+    background-color: grey;
+    transition: 0.5s;
+    border-radius: 2.5rem;
+}
+
+.slider:before {
+    position: absolute;
+
+    height: 2rem;
+    width: 2rem;
+    left: 0.25rem;
+    bottom: 0.25rem;
+
+    content: "";
+    background-color: white;
+    transition: .2s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: violet;
+}
+
+input:checked+.slider:before {
+    transform: translateX(2rem);
+}
