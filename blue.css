@@ -1,28 +1,30 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "Helvetica", "Arial", sans-serif;
-    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
     background: #282c34;
 }
 
 h1 {
     font-weight: 900;
-    color: white;
-    font-size: 60px;
+    color: #fff;
+    font-size: 56px; /* Adjusted font size for the title */
     text-align: center;
 }
 
 h2 {
     font-weight: 700;
-    color: white;
-    font-size: 40px;
+    color: #fff;
+    font-size: 32px; /* Adjusted font size for headings */
     text-align: center;
 }
 
 p.spaced {
     line-height: 1.5;
+    font-size: 16px; /* Adjusted font size for regular text */
 }
+
 
 p.small {
     font-size: 14px;
@@ -50,25 +52,26 @@ section {
 }
 
 .navi {
-    font-weight: 300;
-    background-color: hwb(220 14% 84%);
+    background-color: #333;
     overflow: hidden;
+    text-align: center;
 }
 
 .navi a {
-    float: left;
-    text-align: center;
-    padding: 14px 16px;
+    display: inline-block;
+    padding: 14px 20px;
     text-decoration: none;
-    font-size: 24px;
-    color: grey;
-    display: block;
+    font-size: 18px;
+    color: #fff; 
+    font-family: Arial, Helvetica, sans-serif; 
+    transition: color 0.3s, background-color 0.3s; 
 }
 
-.navi a.active {
-    background-color: #1f2229;
-    color: white;
+.navi a:hover {
+    background-color: #555; 
+    color: #fff;
 }
+
 
 .navi .icon {
     display: none;
