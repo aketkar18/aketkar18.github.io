@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Discarded</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-link">← Back</a>
+    <h1>Privacy Policy</h1>
+    <p class="last-updated">Last updated: March 10, 2026</p>
+
+    <p>Discarded ("the App") is a free card deduction game. This Privacy Policy explains how data is handled when you use the App.</p>
+
+    <h2>1. Information Stored on Your Device</h2>
+    <p>The following data is stored locally on your device only and is never sent to any server:</p>
+    <ul>
+      <li><strong>Nickname:</strong> If you set a custom nickname for party mode, it is saved locally using standard app storage. You can clear it at any time by deleting it in the app.</li>
+      <li><strong>Custom topics:</strong> Any topics you create are stored locally on your device. They are not uploaded or shared with any server.</li>
+      <li><strong>AI disclaimer preferences:</strong> Whether you have seen certain in-app disclaimers is stored locally on your device.</li>
+    </ul>
+
+    <h2>2. Party Mode</h2>
+    <p>Party mode uses Ably, a third-party real-time messaging service, as an intermediary between players. Here is exactly how data flows:</p>
+    <ul>
+      <li>Topic words are never stored on any server. When a game starts, topic words are transmitted ephemerally through Ably to connected devices. They are not persisted in any database.</li>
+      <li>Only card index numbers (not the actual topic words) are stored in Ably's real-time data objects during gameplay. The topic words themselves are only held in memory on each player's device.</li>
+      <li>Questions are transmitted through Ably's real-time data objects, but only the most recent question exists at any given time. Previous questions are not retained.</li>
+      <li>Nicknames are transmitted to other players in the same session. They are not stored on our servers.</li>
+      <li>Session tokens are generated per game and are only valid for that single session. Once the game ends, the token expires.</li>
+      <li>Ably does not persist messages. Message persistence is not enabled, so Ably functions as a pass-through relay between devices.</li>
+      <li>Party server data — The only data our server (hosted on Vercel with Upstash) stores for a party session is: the Ably channel identifier, whether the game has started, and a creation timestamp. This contains no player information, no topic words, and no gameplay content. This data is ephemeral and is automatically removed by Upstash's expiration policy.</li>
+    </ul>
+    <p>Ably's privacy policy is available at <a href="https://ably.com/privacy">ably.com/privacy</a>.</p>
+
+    <h2>3. AI Mode</h2>
+    <p>When you play against AI, your questions are sent to our server, which forwards them to the Google Gemini API to generate answers. No personally identifying information is included in these requests; only the question text, the secret card name, and the topic name.</p>
+    <p>The nickname used in Party Mode is not used anywhere for AI Mode.</p>
+    <p>We do not log or store your questions or Gemini's responses. However, Google may process and retain this data according to their own policies. Google's privacy policy is available at <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
+
+    <h2>4. Reports</h2>
+    <p>If you report a player in party mode, the following information is sent to our server: a randomly generated session ID (not tied to your identity across sessions), the reported player's nickname, the reported message, and a timestamp. This is the only scenario where any user-generated content reaches the developer. Report data is stored temporarily in Upstash and is automatically removed by Upstash's expiration policy.</p>
+
+    <h2>5. Information We Do Not Collect</h2>
+    <ul>
+      <li>We do not require accounts. There is no sign-up, no email, no phone number.</li>
+      <li>We do not collect device identifiers, advertising IDs, or analytics data.</li>
+      <li>We do not use cookies or tracking technologies.</li>
+      <li>We do not collect location data.</li>
+      <li>We do not access your contacts, photos, camera, microphone, or health data.</li>
+      <li>We do not have access to your questions in AI mode or your conversations in party mode. The developer cannot see what you type during gameplay.</li>
+    </ul>
+
+    <h2>6. Third-Party Services</h2>
+    <p>The App uses the following third-party services:</p>
+    <ul>
+      <li><a href="https://ably.com/privacy">Ably</a> — real-time messaging relay for party mode</li>
+      <li><a href="https://policies.google.com/privacy">Google Gemini API</a> — AI question answering</li>
+      <li><a href="https://vercel.com/legal/privacy-policy">Vercel</a> — server hosting</li>
+      <li><a href="https://upstash.com/trust/privacy.mdx">Upstash</a> — ephemeral session storage</li>
+    </ul>
+    <p>We do not share any personally identifying information with these services.</p>
+
+    <h2>7. Data Retention</h2>
+    <ul>
+      <li>Local data (nickname, custom topics, preferences) persists on your device until you delete it or uninstall the App.</li>
+      <li>Party session data on our server is ephemeral and is automatically removed by Upstash's expiration policy.</li>
+      <li>Report data is retained temporarily and is also subject to Upstash's automatic expiration.</li>
+      <li>We do not maintain any long-term database of user activity.</li>
+    </ul>
+
+    <h2>8. Children's Privacy</h2>
+    <p>The App is intended for users aged 13 and older due to its real-time multiplayer features where players can communicate with each other. The App does not knowingly collect personal information from children under 13. If you believe a child under 13 is using the App, please contact us so we can take appropriate action.</p>
+
+    <h2>9. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Changes will be reflected by the "Last updated" date at the top of this page.</p>
+
+    <h2>10. Contact</h2>
+    <p>If you have questions about this Privacy Policy, please contact us at <a href="mailto:anujmketkar@gmail.com">anujmketkar@gmail.com</a>.</p>
+  </div>
+</body>
+</html>
